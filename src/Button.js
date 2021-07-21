@@ -1,31 +1,30 @@
-import React from 'react';
+import React from 'react'
+import './Button.css'
 
- export function Button({children, disabled, onClick, buttonStyle, buttonSize, type}){
-    const STYLES = ['btn-primary', 'btn-outline'];
-    const SIZES = ['btn-medium', 'btn-large', "btn-small"];
 
-    function checkButtonStyle (){
-        return STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
-    }
-
-    function checkButtonSize (){
-        return SIZES.includes(buttonSize)? buttonSize : SIZES[0];
-    }
+const STYLES = ['btn--primary', 'btn--outline', 'btn--card', 'btn--page']
+const SIZES = ['btn--medium', 'btn--large', 'btn--small']
+export const Button = ({
+                           children,
+                           type,
+                           onClick,
+                           buttonStyle,
+                           buttonSize,
+                           disabled,
+                       }) =>{
+    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
     return(
+
         <button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
             type={type}
             disabled={disabled}
-            >
+        >
             {children}
         </button>
 
-
     )
-
-
-
-
-}
+};

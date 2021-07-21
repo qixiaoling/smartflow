@@ -19,12 +19,12 @@ function HeroSection(){
             </video>
 
             <h1>What's Your Next Move?</h1>
+            <br/>
             <Button
-                className = 'btn'
-                buttonSize='btn-medium'
-                buttonStyle='btn-outline'
-                onClick={()=> explore()}
-
+                className='btn'
+                buttonStyle='btn--outline'
+                buttonSize='btn--large'
+                data-testid='test'
             >
                 Explore
             </Button>

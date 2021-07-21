@@ -1,0 +1,76 @@
+
+.navbar {
+    font-family: 'Michroma', sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+
+
+}
+.company-logo {
+    color: var(--primary);
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titles {
+    font-size: large;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 50%;
+    text-decoration: none;
+}
+
+a {
+    color: var(--primary);
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    font-size: x-large;
+    color: var(--primary);
+    display: none;
+}
+@media screen and (max-width: 950px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .titles {
+        position: absolute;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        top: 10vh;
+        height: 90vh;
+        width: 100%;
+        align-items: center;
+        font-size: 32px;
+        background-color: #3bbcb1;
+
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .active {
+        transform: translateX(0%);
+    }
+}

@@ -1,0 +1,35 @@
+
+body {
+    font-family: 'Michroma', sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.about-me-container {
+    background-color: #242424;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pop-up-container {
+    display: flex;
+    width: 50%;
+}
+
+.text-container {
+    width: 50%;
+    padding: 10px;
+    margin: 50px;
+}
+.about-me-container img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+
+

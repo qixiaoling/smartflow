@@ -55,10 +55,6 @@ a {
         overflow-x: hidden;
     }
 
-    .hamburger-menu {
-        display: block;
-    }
-
     .titles {
         position: absolute;
         right: 0px;
@@ -79,5 +75,8 @@ a {
     }
     .active {
         transform: translateX(0%);
+    }
+    .hamburger-menu {
+        display: block;
     }
 }

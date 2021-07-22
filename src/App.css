@@ -7,6 +7,8 @@
 }
 :root {
     --primary: #fff;
+    --neon: 53E0D3;
+   --bg: hsl(323 21% 16%);
 }
 a {
     text-decoration: none;

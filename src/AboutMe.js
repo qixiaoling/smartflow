@@ -8,7 +8,7 @@ function AboutMe() {
     function renderClasses(){
         let classes = 'high-light-list';
         if(hightLightOpen){
-            classes += 'active';
+            classes += ' active';
         }
         return classes;
     }

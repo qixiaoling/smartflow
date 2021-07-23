@@ -25,7 +25,7 @@ function AboutMe() {
                 <ul className={renderClasses()}>
                     <li className='high-light-item'>Software Engineering degree</li>
                     <li className='high-light-item'>More Than 30 Years Experience</li>
-                    <li className='high-light-item'>Lean Six Sigma Master Black</li>
+                    <li className='high-light-item'>Lean Six Sigma Master Black Belt</li>
 
                 </ul>
             </div>

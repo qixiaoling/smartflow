@@ -43,7 +43,7 @@ body {
 }
 .high-light-button {
     font-family: 'Michroma', sans-serif;
-    background-color: #242424;
+    background-color: transparent;
     color: #fff;
     font-size: x-large;
     box-shadow: 0 0 10px #53E0D3,

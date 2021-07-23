@@ -14,9 +14,3 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    font-family: 'Audiowide', cursive;
-    font-weight: bold;
-    font-size: xxx-large;
-    color: var(--primary);
-}

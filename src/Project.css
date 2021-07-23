@@ -20,4 +20,62 @@ body {
     align-items: center;
     position: absolute;
     top: 10vh;
+    padding: 0px 50px;
+
+}
+.project-content-container {
+    height: 70%;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+p {
+    margin-bottom: 1.25rem;
+}
+.btn-container {
+    width: 40%;
+    height: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.individual-job {
+    width: 60%;
+}
+
+.job-btn {
+    font-family: 'Michroma', sans-serif;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    padding: 0.25rem 0;
+    line-height: 1;
+    color: white;
+
+}
+.job-btn:hover {
+    color: rgba(0,212,255,1);
+    box-shadow: 0 0 10px #53E0D3,
+    0 0 20px #53E0D3,
+    0 0 40px #53E0D3,
+    0 0 80px #53E0D3,
+    0 0 160px #53E0D3;;
 }

@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {projectData} from './Assets/ProjectData';
 import './Project.css'
+
+
 function Project () {
    const jobs = projectData;
    console.log(jobs)
@@ -13,8 +15,16 @@ function Project () {
                     <h2>Projects</h2>
                 </div>
                 <div className='project-content-container'>
-                    <div className='employer'>
-                        //companies
+                    <div className='btn-container'>
+                        {projectData.map((item,index)=>{
+                            return(
+                                <button key={item.id}
+                                        onClick={()=>setValue(index)}
+                                        className={`job-btn ${index === value && 'active-btn'}`}>
+                                    {item.company}
+                                </button>
+                            )
+                        })}
                     </div>
                     <article className='individual-job'>
                         <h3>{title}</h3>

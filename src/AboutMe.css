@@ -44,16 +44,23 @@ body {
 .high-light-button {
     font-family: 'Michroma', sans-serif;
     background-color: transparent;
-    color: #fff;
-    font-size: x-large;
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    padding: 0.25rem 0;
+    line-height: 1;
+    color: rgba(0,212,255,1);
     box-shadow: 0 0 10px #53E0D3,
     0 0 20px #53E0D3,
     0 0 40px #53E0D3,
     0 0 80px #53E0D3,
-    0 0 160px #53E0D3;
-
+    0 0 160px #53E0D3;;
 
 }
+
 .high-light-list {
     transform: translateX(-200%);
     transition: transform 0.5s ease-in;

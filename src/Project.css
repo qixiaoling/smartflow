@@ -28,6 +28,7 @@ body {
     display: flex;
     /*justify-content: space-evenly;*/
     align-items: center;
+    padding: 0 3rem;
 }
 h1 {
     font-size: 3rem;
@@ -45,8 +46,8 @@ p {
     margin-bottom: 1.25rem;
 }
 .btn-container {
-    width: 40%;
-    height: 62%;
+    width: 30%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -54,7 +55,8 @@ p {
 
 }
 .individual-job {
-    width: 60%;
+    width: 70%;
+    padding: 0 4rem;
 }
 
 .job-btn {
@@ -69,6 +71,7 @@ p {
     padding: 0.25rem 0;
     line-height: 1;
     color: white;
+    transition: all 0.1s ease-in;
 
 }
 .job-btn:hover {

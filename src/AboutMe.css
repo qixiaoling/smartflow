@@ -58,13 +58,13 @@ body {
     0 0 40px #53E0D3,
     0 0 80px #53E0D3,
     0 0 160px #53E0D3;;
-    transition: all 0.3s ease-in;
+
 
 }
 
 .high-light-list {
     transform: translateX(-200%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease-in;
 }
 
 .active {

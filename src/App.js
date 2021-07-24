@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import AboutMe from "./AboutMe";
 import Project from "./Project";
+import Review from "./Review";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
                 <Route path='/' exact component={Home}/>
                 <Route path='/about-me' exact component={AboutMe}/>
                 <Route path='/project' exact component={Project}/>
+                <Route path='/review' exact component={Review}/>
             </Switch>
         </Router>
 

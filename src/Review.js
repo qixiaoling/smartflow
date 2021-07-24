@@ -6,7 +6,7 @@ function Reivew() {
     return (
         <div className='review-container'>
             <div className='inner-review-container'>
-                <h2>See What the Client Has Said</h2>
+                <h2>What our Clients say about SmartFlow</h2>
                 <ReviewCard/>
             </div>
 

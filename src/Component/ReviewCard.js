@@ -4,7 +4,27 @@ import {reviews} from '../Assets/ReviewData'
 function ReviewCard() {
     const [index, setIndex] = useState(0);
     const {name, job, text, image} = reviews[index];
-
+    const prevPerson = () => {
+        setIndex((index)=>{
+            let newIndex = index-1;
+            return checkNumber(newIndex)
+        })
+    }
+    const nextPerson = () => {
+        setIndex((index)=>{
+            let newIndex = index+1;
+            return checkNumber(newIndex)
+        })
+    }
+    const checkNumber = (number) => {
+        if(number>reviews.length-1){
+            return 0;
+        }
+        if(number < 0){
+            return reviews.length-1;
+        }
+        return number;
+    }
 
     return (
         <div className='item-container'>
@@ -16,11 +36,16 @@ function ReviewCard() {
             <p className='job'>{job}</p>
             <p className='info'>{text}</p>
             <div className='button-container'>
-                <button className='review-btn'>
+                <button
+                    className='review-btn'
+                    onClick={prevPerson}
+                        >
                     <i className="fas fa-arrow-left"></i>
                 </button>
 
-                <button className='review-btn'>
+                <button
+                    className='review-btn'
+                    onClick={nextPerson}>
                     <i className="fas fa-arrow-right"></i>
                 </button>
             </div>

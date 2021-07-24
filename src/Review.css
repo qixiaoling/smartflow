@@ -24,8 +24,9 @@ body {
 
 }
 .item-container {
+    width: 80%;
     background-color: transparent;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 15rem;
     border-radius: 2px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;

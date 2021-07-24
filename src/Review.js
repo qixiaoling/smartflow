@@ -7,9 +7,10 @@ function Reivew() {
         <div className='review-container'>
             <div className='inner-review-container'>
                 <h2>See What the Client Has Said</h2>
+                <ReviewCard/>
             </div>
 
-            <ReviewCard/>
+
 
         </div>
     )

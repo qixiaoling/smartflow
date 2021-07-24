@@ -23,3 +23,48 @@ body {
     padding: 0px 50px;
 
 }
+.item-container {
+    background-color: transparent;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+.review-btn {
+    font-family: 'Michroma', sans-serif;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    padding: 0.25rem 0;
+    line-height: 1;
+    color: white;
+    transition: all 0.1s ease-in;
+
+}
+.review-btn:hover {
+    color: rgba(0,212,255,1);
+    box-shadow: 0 0 10px #53E0D3,
+    0 0 20px #53E0D3,
+    0 0 40px #53E0D3,
+    0 0 80px #53E0D3,
+    0 0 160px #53E0D3;;
+}

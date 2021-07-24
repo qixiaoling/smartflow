@@ -26,7 +26,7 @@ function HeroSection(){
                 buttonSize='btn--large'
                 data-testid='test'
             >
-                Explore
+                Get Started
             </Button>
         </div>
     )

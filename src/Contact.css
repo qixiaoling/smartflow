@@ -26,10 +26,17 @@ body {
 form {
     font-family: 'Michroma', sans-serif;
     width: 80%;
-    height: 50%;
+    height: 60%;
 }
 
 fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 100%;
+}
+
+.fieldset-above {
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -47,8 +54,9 @@ fieldset {
     0 0 80px #53E0D3,
     0 0 160px #53E0D3;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0px 10px;
     height: 80%;
+    max-width: 30%;
 
 }
 .contact-details {
@@ -67,7 +75,7 @@ fieldset {
     justify-content: space-evenly;
     align-items: flex-start;
     margin-left: 3rem;
-    padding: 10px;
+    /*padding: 10px;*/
     height: 100%;
 }
 
@@ -117,4 +125,29 @@ legend {
 h4 {
     text-align: center;
 }
+
+.fieldset-bottem {
+    padding: 0px 25px;
+    margin: 20px;
+}
+.contact-submit {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: 'Michroma', sans-serif;
+    /*box-shadow: 0 0 10px #53E0D3,*/
+    /*0 0 20px #53E0D3,*/
+    /*0 0 40px #53E0D3,*/
+    /*0 0 80px #53E0D3,*/
+    /*0 0 160px #53E0D3;*/
+}
+.contact-submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #53E0D3,
+    0 0 20px #53E0D3,
+    0 0 40px #53E0D3,
+    0 0 80px #53E0D3,
+    0 0 160px #53E0D3;
+}
+
 

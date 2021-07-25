@@ -19,82 +19,91 @@ function Contact() {
                 <form onSubmit={handleSubmit(onFormSubmit)}>
                     <fieldset>
                         <legend>Information</legend>
-                        <div className='col-left'>
-                            <h4>Contact information</h4>
-                            <div className='contact-details'>
-                                <i className="fas fa-phone-square-alt"></i>
-                                <p className='detail'>0031 (0) 6 5322 7615</p>
+                        <div className='fieldset-above'>
+                            <div className='col-left'>
+                                <h4>Contact information</h4>
+                                <div className='contact-details'>
+                                    <i className="fas fa-phone-square-alt"></i>
+                                    <p className='detail'>0031 (0) 6 5322 7615</p>
+                                </div>
+                                <div className='contact-details'>
+                                    <i className="far fa-envelope"></i>
+                                    <p className='detail'>ericvandoorn@planet.nl</p>
+                                </div>
+                                <div className='contact-details'>
+                                    <i className="fas fa-map-marker-alt"></i>
+                                    <p className='detail'>Zandbergenlaan 43, Amersfoort, NL</p>
+                                </div>
                             </div>
-                            <div className='contact-details'>
-                                <i className="far fa-envelope"></i>
-                                <p className='detail'>ericvandoorn@planet.nl</p>
-                            </div>
-                            <div className='contact-details'>
-                                <i className="fas fa-map-marker-alt"></i>
-                                <p className='detail'>Zandbergenlaan 43, Amersfoort, NL</p>
-                            </div>
-                        </div>
-                        <div className='col-right'>
-                            <div className='contact-element'>
-                                <div className='form-group'>
-                                    <label htmlFor="firstName">
-                                        First Name :
+                            <div className='col-right'>
+                                <div className='contact-element'>
+                                    <div className='form-group'>
+                                        <label htmlFor="firstName">
+                                            First Name :
+                                            <input
+                                                type='text'
+                                                id='firstName'
+                                                placeholder='First Name * '
+                                                {...register('firstName')}
+                                            />
+                                        </label>
+                                    </div>
+                                    <div className='form-group'>
+                                        <label htmlFor="lastName">
+                                            Last Name :
+                                            <input
+                                                type='text'
+                                                id='lastName'
+                                                placeholder='Last Name * '
+                                                {...register('lastName')}
+                                            />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div className='contact-element-other'>
+                                    <label htmlFor="organisation">
+                                        Organisation :
                                         <input
                                             type='text'
-                                            id='firstName'
-                                            placeholder='First Name * '
-                                            {...register('firstName')}
+                                            id='organisation'
+                                            placeholder='Organisation *'
+                                            {...register('organisation')}
                                         />
                                     </label>
                                 </div>
-                                <div className='form-group'>
-                                    <label htmlFor="lastName">
-                                        Last Name :
+                                <div className='contact-element-other'>
+                                    <label htmlFor="email">
+                                        Email :
                                         <input
-                                            type='text'
-                                            id='lastName'
-                                            placeholder='Last Name * '
-                                            {...register('lastName')}
+                                            type='email'
+                                            id='email'
+                                            placeholder='Email *'
+                                            {...register('email')}
                                         />
                                     </label>
                                 </div>
-                            </div>
-                            <div className='contact-element-other'>
-                                <label htmlFor="organisation">
-                                    Organisation :
-                                    <input
-                                        type='text'
-                                        id='organisation'
-                                        placeholder='Organisation *'
-                                        {...register('organisation')}
-                                    />
-                                </label>
-                            </div>
-                            <div className='contact-element-other'>
-                                <label htmlFor="email">
-                                    Email :
-                                    <input
-                                        type='email'
-                                        id='email'
-                                        placeholder='Email *'
-                                        {...register('email')}
-                                    />
-                                </label>
-                            </div>
-                            <div className='contact-element-other'>
-                                <label htmlFor="comments">
-                                    Message :
-                                    <textarea
-                                        id='comments'
-                                        rows='4'
-                                        col='30'
-                                        placeholder='What can we help you with *'
-                                        {...register('comments')}
-                                    >
+                                <div className='contact-element-other'>
+                                    <label htmlFor="comments">
+                                        Message :
+                                        <textarea
+                                            id='comments'
+                                            rows='4'
+                                            col='30'
+                                            placeholder='What can we help you with *'
+                                            {...register('comments')}
+                                        >
                         </textarea>
-                                </label>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <div className='fieldset-bottem'>
+                            <button type='submit' className='contact-submit'>
+                                Submit
+                            </button>
+                        </div>
+
+
 
 
 

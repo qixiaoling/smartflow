@@ -22,7 +22,7 @@ function Contact() {
                             <label htmlFor="firstName">
                                 First Name :
                                 <input
-                                    className='fist-name'
+                                    className='element-name'
                                     type='text'
                                     id='firstName'
                                     placeholder='First Name * '
@@ -33,7 +33,7 @@ function Contact() {
                             <label htmlFor="lastName">
                                 Last Name :
                                 <input
-                                    className='last-name'
+                                    className='element-name'
                                     type='text'
                                     id='lastName'
                                     placeholder='Last Name * '
@@ -45,6 +45,7 @@ function Contact() {
                             <label htmlFor="organisation">
                                 Organisation :
                                 <input
+                                    className='element'
                                     type='text'
                                     id='organisation'
                                     placeholder='Organisation *'
@@ -56,6 +57,7 @@ function Contact() {
                             <label htmlFor="email">
                                 Email :
                                 <input
+                                    className='element'
                                     type='email'
                                     id='email'
                                     placeholder='Email *'
@@ -67,6 +69,7 @@ function Contact() {
                             <label htmlFor="comments">
                                 Comments :
                                 <textarea
+                                    className='element'
                                     id='comments'
                                     rows='4'
                                     col='30'

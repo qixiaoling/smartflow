@@ -41,6 +41,8 @@ input {
     font-family: 'Michroma', sans-serif;
     border: 1px solid #53E0D3;
 }
-.contact-element {
-
+.element {
+    width: 100%;
+    font-size: 15px;
 }
+

@@ -57,7 +57,8 @@ body {
     0 0 20px #53E0D3,
     0 0 40px #53E0D3,
     0 0 80px #53E0D3,
-    0 0 160px #53E0D3;;
+    0 0 160px #53E0D3;
+    border-radius: 5px;
 
 
 }

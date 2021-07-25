@@ -29,7 +29,7 @@ function Project () {
                     <article className='individual-job'>
                         <h3>{title}</h3>
                         <h4>{company}</h4>
-                        <p>{dates}</p>
+                        <p className='date'>{dates}</p>
                         {duties.map((duty, index)=>{
                             return(
                                 <div key={index}>

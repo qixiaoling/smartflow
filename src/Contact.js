@@ -48,7 +48,7 @@ function Contact() {
                                             />
                                         </label>
                                     </div>
-                                    <div className='form-group'>
+                                    <div className='form-group' style={{marginLeft:'10px'}}>
                                         <label htmlFor="lastName">
                                             Last Name :
                                             <input

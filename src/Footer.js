@@ -1,9 +1,13 @@
 import React from 'react';
 import './Footer.css'
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import {Button} from "./Button";
 
 function Footer() {
+    const history = useHistory();
+    function handleOnClick (){
+        history.push('/contact')
+    }
     return(
         <div className='footer-container'>
             <Link to='/' className='footer-logo-container'>
@@ -29,6 +33,7 @@ function Footer() {
                         buttonStyle='btn--outline'
                         buttonSize='btn--large'
                         data-testid='test'
+                        onClick={()=>handleOnClick()}
                     >
                         Get Started
                     </Button>

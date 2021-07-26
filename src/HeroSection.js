@@ -3,12 +3,14 @@ import './Button'
 import './HeroSection.css'
 import {Button} from "./Button";
 import videoDigit from './Assets/video.mp4'
+import {useHistory} from "react-router-dom";
 
 
 function HeroSection(){
 
-    function explore(){
-        console.log("explore")
+    const history = useHistory();
+    function handleOnClick (){
+        history.push('/contact')
     }
     return(
         <div className='hero-container'>
@@ -25,6 +27,7 @@ function HeroSection(){
                 buttonStyle='btn--outline'
                 buttonSize='btn--large'
                 data-testid='test'
+                onClick={()=>handleOnClick()}
             >
                 Get Started
             </Button>

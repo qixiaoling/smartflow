@@ -1,11 +1,6 @@
 import React from 'react'
 import TileCard from "./Component/TileCard";
-import mcDonald from './Assets/mcDonald.jpg'
 import sixSigma from './Assets/ATS_Six_Sigma.jpg'
-import sixSigma2 from './Assets/402220484.jpg'
-import sixSigma3 from './Assets/3.jpg'
-import building from './Assets/building.jpg'
-import puzzle from './Assets/puzzle.jpg'
 import bitcoin from './Assets/bitcoin.jpeg'
 import '../src/Tile.css'
 

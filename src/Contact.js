@@ -1,11 +1,31 @@
-import React, {useForm} from "react-hook-form";
+import React, {useState} from "react";
+import emailjs from 'emailjs-com';
 import './Contact.css'
 
 function Contact() {
-    const {handleSubmit, register} = useForm();
+    const [state, setState] = useState({
+        firstName: '',
+        lastName:'',
+        organisation: '',
+        email: '',
+        comments: '',
+    })
 
-    function onFormSubmit(data) {
-        console.log('registered!')
+    function handleChange(e){
+        const value = e.target.value;
+        setState({
+            ...state, [e.target.name]:value
+        })
+    }
+
+    function sendEmail(e) {
+        e.preventDefault()
+        emailjs.sendForm('service_nutqs4m', 'template_ryaderb', e.target, 'user_NgKIGKzOiher4EUv0KXUu')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     }
 
     return (
@@ -13,10 +33,10 @@ function Contact() {
             <div className='inner-contact-container'>
                 <div className='contact-title-container'>
                     <h2>Do you need SmartFlow to help to achieve your Goal?</h2>
-                    <br />
+                    <br/>
                     <h4>Fill in the contact form and let's finish the project together!</h4>
                 </div>
-                <form onSubmit={handleSubmit(onFormSubmit)}>
+                <form onSubmit={sendEmail}>
                     <fieldset>
                         <legend>Information</legend>
                         <div className='fieldset-above'>
@@ -42,20 +62,25 @@ function Contact() {
                                             First Name :
                                             <input
                                                 type='text'
+                                                name='firstName'
+                                                value={state.firstName}
+                                                onChange={handleChange}
                                                 id='firstName'
                                                 placeholder='First Name * '
-                                                {...register('firstName')}
+
                                             />
                                         </label>
                                     </div>
-                                    <div className='form-group' style={{marginLeft:'10px'}}>
+                                    <div className='form-group' style={{marginLeft: '10px'}}>
                                         <label htmlFor="lastName">
                                             Last Name :
                                             <input
                                                 type='text'
                                                 id='lastName'
+                                                value={state.lastName}
+                                                onChange={handleChange}
                                                 placeholder='Last Name * '
-                                                {...register('lastName')}
+                                                name='lastName'
                                             />
                                         </label>
                                     </div>
@@ -66,8 +91,10 @@ function Contact() {
                                         <input
                                             type='text'
                                             id='organisation'
+                                            value={state.organisation}
+                                            onChange={handleChange}
                                             placeholder='Organisation *'
-                                            {...register('organisation')}
+                                            name='organisation'
                                         />
                                     </label>
                                 </div>
@@ -77,8 +104,10 @@ function Contact() {
                                         <input
                                             type='email'
                                             id='email'
+                                            value={state.email}
+                                            onChange={handleChange}
                                             placeholder='Email *'
-                                            {...register('email')}
+                                            name='email'
                                         />
                                     </label>
                                 </div>
@@ -87,10 +116,12 @@ function Contact() {
                                         Message :
                                         <textarea
                                             id='comments'
+                                            value={state.comments}
+                                            onChange={handleChange}
                                             rows='4'
                                             col='30'
                                             placeholder='What can we help you with *'
-                                            {...register('comments')}
+                                            name='comments'
                                         >
                         </textarea>
                                     </label>
@@ -98,13 +129,9 @@ function Contact() {
                             </div>
                         </div>
                         <div className='fieldset-bottem'>
-                            <button type='submit' className='contact-submit'>
-                                Submit
-                            </button>
+                            <input type='submit' value='send' className='contact-submit' />
+
                         </div>
-
-
-
 
 
                     </fieldset>
@@ -115,5 +142,6 @@ function Contact() {
         </div>
     )
 }
+
 
 export default Contact

@@ -22,19 +22,19 @@ function Navbar() {
             </Link>
             <ul className={changeClasses()}>
                 <li className='title-item'>
-                    <a href='/'>Home</a>
+                    <Link to='/'>Home</Link>
                 </li>
                 <li className='title-item'>
-                    <a href='/about-me'>About Me</a>
+                    <Link to='/about-me'>About Me</Link>
                 </li>
                 <li className='title-item'>
-                    <a href='/project'>Project</a>
+                    <Link to='/project'>Project</Link>
                 </li>
                 <li className='title-item'>
-                    <a href='/review'>Review</a>
+                    <Link to='/review'>Review</Link>
                 </li>
                 <li lassName='title-item'>
-                    <a href='/contact'>Contact</a>
+                    <Link to='/contact'>Contact</Link>
                 </li>
             </ul>
             <div className='hamburger-menu' onClick={() => toggleTitleOpen(!titleOpen)}>

@@ -7,7 +7,7 @@ function Contact() {
         firstName: '',
         lastName:'',
         organisation: '',
-        email: '',
+        user_email: '',
         comments: '',
     })
 
@@ -99,15 +99,15 @@ function Contact() {
                                     </label>
                                 </div>
                                 <div className='contact-element-other'>
-                                    <label htmlFor="email">
+                                    <label htmlFor="user_email">
                                         Email :
                                         <input
-                                            type='email'
-                                            id='email'
-                                            value={state.email}
+                                            type='user_email'
+                                            id='user_email'
+                                            value={state.user_email}
                                             onChange={handleChange}
                                             placeholder='Email *'
-                                            name='email'
+                                            name='user_email'
                                         />
                                     </label>
                                 </div>

@@ -1,0 +1,95 @@
+
+body {
+    font-family: 'Michroma', sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.project-container {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,114,124,1) 76%, rgba(0,212,255,1) 100%);
+    height: 100vh;
+    width: 100%;
+
+}
+.inner-project-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    padding: 0px 50px;
+
+}
+.project-content-container {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+.date {
+    margin-bottom: 1.25rem;
+}
+.btn-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.individual-job {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 70%;
+    padding: 0 4rem;
+}
+
+.job-btn {
+    font-family: 'Michroma', sans-serif;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    padding: 0.25rem 0;
+    line-height: 1;
+    color: white;
+    transition: all 0.1s ease-in;
+
+}
+.job-btn:hover {
+    color: rgba(0,212,255,1);
+    box-shadow: 0 0 10px #53E0D3,
+    0 0 20px #53E0D3,
+    0 0 40px #53E0D3,
+    0 0 80px #53E0D3,
+    0 0 160px #53E0D3;
+    border-radius: 5px;
+}
+.title-container {
+    margin-top: 2rem;
+}

@@ -1,0 +1,40 @@
+.tile-container {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
+    rgba(43,114,124,1) 76%, rgba(0,212,255,1) 100%);
+    display: grid;
+    grid-template-rows: 50vh 50vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas:
+            'one two'
+            'three four';
+
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+
+.tile-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+
+.tile-img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}

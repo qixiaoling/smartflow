@@ -25,6 +25,7 @@ body {
 }
 .item-container {
     width: 80%;
+    height: 70%;
     background-color: transparent;
     padding: 1rem 10rem;
     border-radius: 2px;
@@ -32,8 +33,9 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    font-size: large;
 }
 
 .person-img {

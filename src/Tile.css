@@ -38,3 +38,12 @@
     max-height: 100%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+    .tile-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

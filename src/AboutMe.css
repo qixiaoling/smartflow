@@ -52,7 +52,9 @@ body {
     width: 55%;
     display: flex;
     flex-direction: column;
-    margin-right: 2em;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5em;
 }
 
 h2, p {
@@ -102,6 +104,9 @@ h2, p {
     }
     .container-right {
         margin: 0 2em;
+    }
+    .container-left {
+        margin-bottom: 2em;
     }
 
 

@@ -3,44 +3,62 @@ body {
     font-family: 'Michroma', sans-serif;
     color: #fff;
     letter-spacing: 3px;
-}
-.about-me-container {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,114,124,1) 76%, rgba(0,212,255,1) 100%);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-}
-.pop-up-container {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 90vh;
-    justify-content: space-evenly;
-    align-items: center;
     position: relative;
+    font-size: 1rem;
 }
 
-.text-container {
-    width: 50%;
+.about-me-container {
+    width: 100%;
     height: 90vh;
-    padding: 10px;
-    margin: 50px;
+    position: absolute;
+    top: 10vh;
+    overflow: hidden;
+    background: rgb(2, 0, 36);
+    background:
+            linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(43, 114, 124, 1) 76%,
+            rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.about-me-container img {
-    width: 30rem;
-    height: 30rem;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #fff;
+
+.container-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.container-left img {
+    width: 55%;
+    min-width: 55%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 3em;
+    border-radius: 5px;
+}
+
+.container-right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+
+h2, p {
+    margin-bottom: 1.5em;
+}
+
 .high-light-button {
     font-family: 'Michroma', sans-serif;
     background-color: transparent;
@@ -48,19 +66,17 @@ body {
     text-transform: capitalize;
     font-size: 1.25rem;
     letter-spacing: 2px;
-    margin: 0.5rem 0.5rem;
+    margin: 0.5em 0.5em 1.5em 0.5em;
     cursor: pointer;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5em 0.5em;
     line-height: 1;
-    color: rgba(0,212,255,1);
+    color: rgba(0, 212, 255, 1);
     box-shadow: 0 0 10px #53E0D3,
     0 0 20px #53E0D3,
     0 0 40px #53E0D3,
     0 0 80px #53E0D3,
     0 0 160px #53E0D3;
     border-radius: 5px;
-
-
 }
 
 .high-light-list {
@@ -70,6 +86,28 @@ body {
 
 .active {
     transform: translateX(0%);
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+    }
+    .container-right {
+        margin: 0 2em;
+    }
+
+
+
+
+
 }
 
 

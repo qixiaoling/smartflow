@@ -7,7 +7,7 @@ import '../src/Tile.css'
 function Tile() {
     return(
         <div className='tile-container'>
-            {/*<div className='inner-tile-container'>*/}
+
                 <TileCard id='one'
                     title = '6 unexpected ways Six Sigma can benefit your company'
                     content = 'Six Sigma is a management methodology which allows companies to use data to eliminate
@@ -30,7 +30,7 @@ function Tile() {
                     were false and misleading,” the lawsuit alleges.'
                     path='/news'
                 />
-            {/*</div>*/}
+
         </div>
 
     )

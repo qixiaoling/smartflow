@@ -7,48 +7,39 @@ body {
 .about-me-container {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,114,124,1) 76%, rgba(0,212,255,1) 100%);
-    height: 100vh;
     width: 100%;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: flex-end;*/
+    height: 100vh;
+    display: flex;
+
 
 }
-.about-me-wrapper {
-    margin-inline: auto;
-    width: min(90%, 85rem);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.pop-up-container {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 90vh;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.text-container {
-    width: 50%;
-    height: 90vh;
-    padding: 10px;
-    margin: 50px;
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.about-me-container img {
-    width: 30rem;
-    height: 30rem;
+.container-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+img {
+   width: 350px;
+    height: 350px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #fff;
+    margin-bottom: 3em;
 }
+.container-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+h2, p {
+    margin-bottom: 1.5em;
+}
+
 .high-light-button {
     font-family: 'Michroma', sans-serif;
     background-color: transparent;
@@ -56,9 +47,9 @@ body {
     text-transform: capitalize;
     font-size: 1.25rem;
     letter-spacing: 2px;
-    margin: 0.5rem 0.5rem;
+    margin: 0.5em 0.5em 1.5em 0.5em;
     cursor: pointer;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5em 0.5em;
     line-height: 1;
     color: rgba(0,212,255,1);
     box-shadow: 0 0 10px #53E0D3,
@@ -67,8 +58,6 @@ body {
     0 0 80px #53E0D3,
     0 0 160px #53E0D3;
     border-radius: 5px;
-
-
 }
 
 .high-light-list {

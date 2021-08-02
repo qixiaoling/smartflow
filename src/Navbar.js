@@ -14,6 +14,9 @@ function Navbar() {
         }
         return classes;
     }
+    function closeMobileMenu(){
+        toggleTitleOpen(false);
+    }
 
     return (
         <nav className='navbar'>
@@ -22,19 +25,19 @@ function Navbar() {
             </Link>
             <ul className={changeClasses()}>
                 <li className='title-item'>
-                    <Link to='/'>Home</Link>
+                    <Link to='/' onClick={closeMobileMenu}>Home</Link>
                 </li>
                 <li className='title-item'>
-                    <Link to='/about-me'>About Me</Link>
+                    <Link to='/about-me' onClick={closeMobileMenu}>About Me</Link>
                 </li>
                 <li className='title-item'>
-                    <Link to='/project'>Project</Link>
+                    <Link to='/project' onClick={closeMobileMenu}>Project</Link>
                 </li>
                 <li className='title-item'>
-                    <Link to='/review'>Review</Link>
+                    <Link to='/review' onClick={closeMobileMenu}>Review</Link>
                 </li>
                 <li lassName='title-item'>
-                    <Link to='/contact'>Contact</Link>
+                    <Link to='/contact' onClick={closeMobileMenu}>Contact</Link>
                 </li>
             </ul>
             <div className='hamburger-menu' onClick={() => toggleTitleOpen(!titleOpen)}>

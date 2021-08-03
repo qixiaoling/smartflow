@@ -3,6 +3,7 @@ import {projectData} from './Assets/ProjectData';
 import './Project.css'
 
 
+
 function Project () {
    const jobs = projectData;
    console.log(jobs)
@@ -10,12 +11,12 @@ function Project () {
     const {duties, company, dates, title} = jobs[value];
     return(
         <section className='project-container'>
-            <div className='inner-project-container'>
+
                 <div className='title-container'>
                     <h2>Projects</h2>
                 </div>
-                <div className='project-content-container'>
-                    <div className='btn-container'>
+                <div className='content-container'>
+                    <div className='content-container-left'>
                         {projectData.map((item,index)=>{
                             return(
                                 <button key={item.id}
@@ -26,7 +27,7 @@ function Project () {
                             )
                         })}
                     </div>
-                    <article className='individual-job'>
+                    <article className='content-container-right'>
                         <h3>{title}</h3>
                         <h4>{company}</h4>
                         <p className='date'>{dates}</p>
@@ -41,7 +42,7 @@ function Project () {
                     </article>
                 </div>
 
-            </div>
+
 
         </section>
     )

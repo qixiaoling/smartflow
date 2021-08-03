@@ -4,14 +4,14 @@ body {
     color: #fff;
     letter-spacing: 3px;
 }
-.project-container {
+.review-container {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,114,124,1) 76%, rgba(0,212,255,1) 100%);
     height: 100vh;
     width: 100%;
 
 }
-.inner-project-container {
+.inner-review-container {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -23,50 +23,32 @@ body {
     padding: 0px 50px;
 
 }
-.project-content-container {
+.review-item-container {
     width: 80%;
     height: 70%;
-    display: flex;
-    /*justify-content: space-evenly;*/
-    align-items: center;
-    padding: 0 3rem;
-    margin-bottom: 2rem;
+    background-color: transparent;
+    padding: 1rem 10rem;
+    border-radius: 2px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    font-size: 3rem;
-}
-h2 {
-    font-size: 2rem;
-}
-h3 {
-    font-size: 1.25rem;
-}
-h4 {
-    font-size: 0.875rem;
-}
-.date {
-    margin-bottom: 1.25rem;
-}
-.btn-container {
-    width: 30%;
-    height: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-
-}
-.individual-job {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 70%;
-    padding: 0 4rem;
+    font-size: large;
 }
 
-.job-btn {
+.person-img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+.review-btn {
     font-family: 'Michroma', sans-serif;
     background-color: transparent;
     border-color: transparent;
@@ -79,18 +61,14 @@ h4 {
     line-height: 1;
     color: white;
     transition: all 0.1s ease-in;
+    border-radius: 5px;
 
 }
-.job-btn:hover {
+.review-btn:hover {
     color: rgba(0,212,255,1);
     box-shadow: 0 0 10px #53E0D3,
     0 0 20px #53E0D3,
     0 0 40px #53E0D3,
     0 0 80px #53E0D3,
-    0 0 160px #53E0D3;
-    border-radius: 5px;
+    0 0 160px #53E0D3;;
 }
-.title-container {
-    margin-top: 2rem;
-}
-

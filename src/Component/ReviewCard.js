@@ -27,7 +27,7 @@ function ReviewCard() {
     }
 
     return (
-        <div className='item-container'>
+        <div className='review-item-container'>
             <img src={image}
                  alt={name}
                  className='person-img'

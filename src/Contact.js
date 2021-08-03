@@ -44,15 +44,15 @@ function Contact() {
                                 <h4>Contact information</h4>
                                 <div className='contact-details'>
                                     <i className="fas fa-phone-square-alt"></i>
-                                    <p className='detail'>0031 (0) 6 1234 5678</p>
+                                    <p className='contact-detail-info'>0031 (0) 6 1234 5678</p>
                                 </div>
                                 <div className='contact-details'>
                                     <i className="far fa-envelope"></i>
-                                    <p className='detail'>ericvandoorn@smartflow.nl</p>
+                                    <p className='contact-detail-info'>ericvandoorn@smartflow.nl</p>
                                 </div>
                                 <div className='contact-details'>
                                     <i className="fas fa-map-marker-alt"></i>
-                                    <p className='detail'>SmartFlow 100, Amersfoort, NL</p>
+                                    <p className='contact-detail-info'>SmartFlow 100, Amersfoort, NL</p>
                                 </div>
                             </div>
                             <div className='contact-col-right'>

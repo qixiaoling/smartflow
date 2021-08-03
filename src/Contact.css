@@ -165,11 +165,12 @@ form {
         margin: 2em;
     }
     .fieldset-bottom {
-        margin:0;
+        margin:0 0 2em 0;
         padding:0;
         width: 100%;
         display: flex;
         justify-content: center;
+
     }
     .contact-submit {
         width:70%;

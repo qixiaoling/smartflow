@@ -48,7 +48,7 @@ function Contact() {
                                 </div>
                                 <div className='contact-details'>
                                     <i className="far fa-envelope"></i>
-                                    <p className='contact-detail-info'>ericvandoorn@smartflow.nl</p>
+                                    <p className='contact-detail-info'>ericvandoorn @ smartflow .nl</p>
                                 </div>
                                 <div className='contact-details'>
                                     <i className="fas fa-map-marker-alt"></i>

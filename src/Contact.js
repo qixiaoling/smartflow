@@ -30,7 +30,7 @@ function Contact() {
 
     return (
         <div className='contact-container'>
-            <div className='inner-contact-container'>
+
                 <div className='contact-title-container'>
                     <h2>Do you need SmartFlow to help to achieve your Goal?</h2>
                     <br/>
@@ -40,22 +40,22 @@ function Contact() {
                     <fieldset>
                         <legend>Information</legend>
                         <div className='fieldset-above'>
-                            <div className='col-left'>
+                            <div className='contact-col-left'>
                                 <h4>Contact information</h4>
                                 <div className='contact-details'>
                                     <i className="fas fa-phone-square-alt"></i>
-                                    <p className='detail'>0031 (0) 6 1234 5678</p>
+                                    <p className='contact-detail-info'>0031 (0) 6 1234 5678</p>
                                 </div>
                                 <div className='contact-details'>
                                     <i className="far fa-envelope"></i>
-                                    <p className='detail'>ericvandoorn@smartflow.nl</p>
+                                    <p className='contact-detail-info'>ericvandoorn @ smartflow .nl</p>
                                 </div>
                                 <div className='contact-details'>
                                     <i className="fas fa-map-marker-alt"></i>
-                                    <p className='detail'>SmartFlow 100, Amersfoort, NL</p>
+                                    <p className='contact-detail-info'>SmartFlow 100, Amersfoort, NL</p>
                                 </div>
                             </div>
-                            <div className='col-right'>
+                            <div className='contact-col-right'>
                                 <div className='contact-element'>
                                     <div className='form-group'>
                                         <label htmlFor="firstName">
@@ -128,7 +128,7 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div className='fieldset-bottem'>
+                        <div className='fieldset-bottom'>
                             <input type='submit' value='send' className='contact-submit' />
 
                         </div>
@@ -137,8 +137,6 @@ function Contact() {
                     </fieldset>
 
                 </form>
-            </div>
-
         </div>
     )
 }

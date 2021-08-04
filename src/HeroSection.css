@@ -9,6 +9,7 @@ video {
     z-index: -1;
 }
 .hero-container {
+
     height: 100vh;
     width: 100%;
     display: flex;
@@ -18,12 +19,28 @@ video {
 
 }
 
+.hero-container button {
+    font-family: 'Michroma', sans-serif;
+    transition: all 0.1s ease-in;
+}
+.hero-container button:hover {
+    color: rgba(0,212,255,1);
+    box-shadow: 0 0 10px #53E0D3,
+    0 0 20px #53E0D3,
+    0 0 40px #53E0D3,
+    0 0 80px #53E0D3,
+    0 0 160px #53E0D3;
+    border-radius: 5px;
+}
+
 h1 {
     font-family: 'Audiowide', cursive;
     font-weight: bold;
     font-size: xxx-large;
     color: var(--primary);
 }
+
+
 
 @media screen and (max-width: 768px) {
     h1 {

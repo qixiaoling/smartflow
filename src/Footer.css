@@ -6,6 +6,24 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+.footer-container a,
+.footer-container button {
+    font-family: 'Michroma', sans-serif;
+    padding: 0.5em;
+    transition: all 0.1s ease-in;
+}
+
+.footer-container a:hover,
+.footer-container button:hover {
+    color: rgba(0,212,255,1);
+    box-shadow: 0 0 10px #53E0D3,
+    0 0 20px #53E0D3,
+    0 0 40px #53E0D3,
+    0 0 80px #53E0D3,
+    0 0 160px #53E0D3;
+    border-radius: 5px;
+}
+
 .footer-logo-container {
     margin-left: 100px;
     font-size: x-large;

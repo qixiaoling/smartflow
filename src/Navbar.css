@@ -72,7 +72,9 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        top: 10vh;
+        top: 10vh; /*need this, otherwise you cannot click the
+        hamburger menu anymore, as the navlinks will cover the
+        hamburger menu.*/
         height: 90vh;
         width: 100%;
         align-items: center;
